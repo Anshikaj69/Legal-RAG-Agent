@@ -1,0 +1,95 @@
+# =========================
+# 1. Python & Environments
+# =========================
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# =========================
+# 2. Secrets & Configs
+# =========================
+# (This prevents another API token disaster!)
+.env
+# .env.example
+*.pem
+secrets.json
+
+# =========================
+# 3. Data & Databases
+# =========================
+# GitHub blocks pushes over 100MB, so never commit raw datasets
+data/raw/
+data/real/
+data/processed/
+data/chroma_db/
+data/classifier_samples
+*.csv
+*.pdf
+data/classifier_samples/*.json
+tests/*.json
+data/legal_graph.json
+data/rights_guide.json
+evals/test_data/
+# =========================
+# 4. Logs & Temporary Files
+# =========================
+*.log
+temp/
+tmp/
+temp_*.jpg
+sample_order.jpg
+tests/sample_legal.jpg
+tests/eval_results
+
+# =========================
+# 5. OS & Editor Junk
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# 6. Models
+# =========================
+models/saved/
+*.db
+*.db-*
+DOCUMENTATION.md
+lexshield_context_final.md
+
+
+evals/results/
+logs/
+
+test_summarization.py
+test_profile.py
+test_db.py
+output.txt
+test_relevance.py
+test_debug_api.py
+test_scratchpad.py
+scratch1_out.txt
+scratch1_out2.txt
+scratch1_out3.txt
+test_*.py
+scratch_query.py
+
+debug_graph.txt
+debug_output.txt
+res_output.txt
+debug_sc.txt
+
+all_imports.txt
+missing_requirements.txt
+unused_requirements.txt
+
+lexshield_docs.md
+project_documentation.md
+technical_specification.md
+scripts/ 
